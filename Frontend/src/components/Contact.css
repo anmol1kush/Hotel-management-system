@@ -1,0 +1,85 @@
+/* Contact Us Page Styles */
+.contact-us-container {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #74ebd5, #acb6e5); /* Soft gradient background */
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Contact Box */
+.contact-us-box {
+  background: rgba(255, 255, 255, 0.95); /* Light semi-transparent background */
+  color: #333;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+  width: 85%;
+  max-width: 800px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contact-us-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Header Styles */
+.contact-us-header h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #222;
+}
+
+.contact-us-header h3 {
+  font-size: 26px;
+  margin: 5px 0;
+  color: #555;
+}
+
+.contact-us-header p {
+  font-size: 18px;
+  margin-top: 15px;
+  color: #777;
+}
+
+/* Contact Details */
+.contact-details {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.contact-details h4 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.contact-details p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+/* Footer */
+.contact-footer {
+  margin-top: 30px;
+  border-top: 2px solid #555;
+  padding-top: 20px;
+}
+
+.contact-footer p {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Contact Icons */
+.contact-details p i {
+  color: #ff5e57;
+  margin-right: 8px;
+}

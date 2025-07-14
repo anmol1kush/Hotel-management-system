@@ -1,0 +1,140 @@
+/* Room Details Container */
+.room-details-container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f4f7fb;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .room-details-title {
+    font-size: 32px;
+    color: #1e3a8a;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  /* Room Details Card */
+  .room-details-card {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    gap: 20px;
+    max-width: 100%;
+    align-items: center;
+  }
+  
+  /* Room Image Styling */
+  .room-details-image-container {
+    flex-shrink: 0;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .room-details-image {
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  /* Room Information */
+  .room-details-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 70%;
+    text-align: left;
+  }
+  
+  .room-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e3a8a;
+  }
+  
+  .room-type {
+    background-color: #3b82f6;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .room-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1e40af;
+  }
+  
+  .taxes {
+    font-size: 14px;
+    color: #9ca3af;
+  }
+  
+  .room-features {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .room-features li {
+    margin-bottom: 8px;
+    color: #4b5563;
+  }
+  
+  /* Room Status */
+  .room-status {
+    font-size: 16px;
+  }
+  
+  .status-available {
+    color: green;
+  }
+  
+  .status-occupied {
+    color: red;
+  }
+  
+  .status-under_maintenance {
+    color: gray;
+  }
+  
+  /* Max Capacity */
+  .room-capacity {
+    font-size: 16px;
+    color: #4b5563;
+  }
+  
+  /* Book Now Button */
+  .book-now-btn {
+    background-color: #3b82f6;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 15px;
+  }
+  
+  .book-now-btn:hover {
+    background-color: #2563eb;
+  }
+  
+  .book-now-btn.booked {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+  .book-now-btn.booked:hover {
+    background-color: gray;
+  }
+  

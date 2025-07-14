@@ -1,0 +1,149 @@
+/* Home Page Main Container */
+.home-container {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.hero {
+  background: url("/images/hero-bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 90vh; /* Slightly reduced for better responsiveness */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/* Hero Content */
+.hero-content {
+  background: rgba(0, 0, 0, 0.6); /* Slightly darker for better readability */
+  padding: 50px;
+  border-radius: 8px;
+  max-width: 650px;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #3b82f6;
+}
+
+.btn-secondary {
+  background-color: #d97706;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #f59e0b;
+}
+
+/* Services Section */
+.services {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #222;
+  font-weight: bold;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Service Card */
+.service-card {
+  background: #f4f4f4;
+  padding: 20px;
+  width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Booking Section */
+.booking {
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.booking h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.booking p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+      height: 65vh;
+  }
+
+  .services-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .service-card {
+      width: 90%;
+  }
+}

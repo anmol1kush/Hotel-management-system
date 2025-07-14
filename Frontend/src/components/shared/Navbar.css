@@ -1,0 +1,127 @@
+/* Navbar Container */
+.navbar {
+  background-color: #1e3a8a; /* Deep blue color */
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar Inner Container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Logo Style */
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* Links Container */
+.navbar-links {
+  display: flex;
+  gap: 15px;
+}
+
+/* Navbar Links */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover Effect for Links */
+.nav-link:hover {
+  background-color: #3b82f6; /* Light blue on hover */
+}
+
+/* Admin Button Style */
+.admin-btn {
+  background-color: #ef4444; /* Red for Admin Panel */
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover Effect for Admin Button */
+.admin-btn:hover {
+  background-color: #dc2626; /* Darker red on hover */
+}
+
+/* Auth Buttons Container */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Login and Signup Buttons */
+.nav-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+/* Login Button */
+.login-btn {
+  background-color: #22c55e; /* Green for Login */
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: #16a34a;
+}
+
+/* Signup Button */
+.signup-btn {
+  background-color: #3b82f6; /* Blue for Signup */
+  color: white;
+}
+
+.signup-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Mobile View - Responsive Design */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: left;
+    padding: 8px 0;
+  }
+
+  .admin-btn,
+  .nav-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .auth-buttons {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

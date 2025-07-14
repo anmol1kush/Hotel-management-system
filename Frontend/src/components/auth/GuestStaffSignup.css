@@ -1,0 +1,80 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("/images/loginimag.jpg") no-repeat center center/cover;    padding: 20px;
+  backdrop-filter: blur(12px);
+}
+
+.signup-form {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 380px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.signup-form:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+}
+
+.signup-form h2 {
+  margin-bottom: 20px;
+  color: #222;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.signup-form input, .signup-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-form input:focus, .signup-form select:focus {
+  border-color: #5a3f95;
+  outline: none;
+  box-shadow: 0 0 8px rgba(90, 63, 149, 0.5);
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #764ba2, #667eea);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.signup-form button:hover {
+  background: linear-gradient(to right, #5a3f95, #5068d1);
+  transform: scale(1.02);
+}
+
+.signup-form p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #444;
+}
+
+.signup-form a {
+  color: #5068d1;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.signup-form a:hover {
+  color: #5a3f95;
+}

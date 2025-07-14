@@ -1,0 +1,152 @@
+/* Background wrapper for the reviews page */
+.review-page-background {
+  min-height: 100vh;
+  background: url("/images/review.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 20px 40px;
+}
+
+/* Centered wrapper without background/shadow so gradient shows through */
+.review-container-centered {
+  max-width: 950px;
+  max-height: 90vh;
+  width: 100%;
+  overflow-y: auto;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* The main white content box */
+.review-box {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 60px 40px;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading for the reviews section */
+.review-heading {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 800;
+  color: #222;
+}
+
+/* Review list container */
+.review-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Review card style */
+.review-card {
+  width: 80%;
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  background: #fdfdfd;
+  padding: 20px 30px;
+  margin-bottom: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Left side: name and stars */
+.review-left {
+  flex: 0 0 180px;
+  padding-right: 16px;
+  border-right: 1px solid #ddd;
+  text-align: left;
+}
+
+.review-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.review-stars {
+  font-size: 16px;
+  color: #ff9800;
+}
+
+/* Right side: review text */
+.review-right {
+  flex: 1;
+  padding-left: 16px;
+}
+
+.review-comment {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Original Review Form Page (Unchanged) */
+.review-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("/images/review.jpg") no-repeat center center/cover;
+}
+
+.review-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 400px;
+}
+
+.review-form h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.review-form p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.review-form select,
+.review-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.review-form textarea {
+  height: 100px;
+}
+
+.review-form button {
+  background: linear-gradient(to right, #ff9800, #ff5722);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.review-form button:hover {
+  background: linear-gradient(to right, #ff5722, #e64a19);
+}

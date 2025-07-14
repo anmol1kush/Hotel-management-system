@@ -1,0 +1,270 @@
+/* Rooms Container */
+/* Room Information Container */
+.room-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Left Side: Room Number & Included Services */
+.room-left {
+  text-align: left;
+}
+
+.hotel-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.included-service {
+  font-size: 14px;
+  color: #4b5563;
+  margin: 2px 0;
+}
+
+/* Right Side: Room Type, Status, Max Capacity */
+.room-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.room-type {
+  background-color: #3b82f6;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.room-status {
+  background-color: yellow;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.room-capacity {
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.rooms-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #f4f7fb;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+/* Title Styling */
+.rooms-title {
+  font-size: 32px;
+  color: #1e3a8a;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Hotel Card Styling */
+.hotel-card {
+  display: flex;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 100%;
+  gap: 20px;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+}
+
+/* Hover Effect for Hotel Card */
+.hotel-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Hotel Image Styling */
+.hotel-image-container {
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.hotel-image {
+  width: 250px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Hotel Information Section */
+.hotel-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Room Header - Room Number, Room Type, Status, and Capacity */
+.room-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+/* Room Name */
+.hotel-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+/* Room Type */
+.room-type {
+  background-color: #3b82f6;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+/* Status Box */
+.room-status {
+  background-color: #facc15; /* Yellow */
+  color: black;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Max Capacity Box */
+.room-capacity {
+  background-color: #10b981; /* Green */
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Included Services (Food & Spa) */
+.included-services {
+  font-size: 14px;
+  color: #4b5563;
+  margin: 8px 0;
+}
+
+.included-services p {
+  margin: 2px 0;
+}
+
+/* Hotel Details */
+.hotel-details {
+  margin-top: 8px;
+}
+
+.hotel-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.hotel-features li {
+  margin-bottom: 4px;
+  color: #4b5563;
+}
+
+/* Pricing Section */
+.hotel-pricing {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.hotel-price {
+  font-size: 16px;
+  color: #333;
+}
+
+.discounted-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e40af;
+}
+
+.taxes {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/* View Details Button */
+.details-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.details-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .hotel-card {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .hotel-image {
+      width: 100%;
+      height: 200px;
+  }
+
+  .hotel-pricing {
+      text-align: center;
+  }
+
+  .details-btn {
+      width: 100%;
+  }
+
+  /* Room Header Adjustments for Smaller Screens */
+  .room-header {
+      align-items: flex-start;
+  }
+
+  .room-type, .room-status, .room-capacity {
+      width: fit-content;
+  }
+}
