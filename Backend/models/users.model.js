@@ -14,7 +14,7 @@ export const getGuestIdByUserId = (userId) => {
 };
 
 export const findByCredentials = (username, password) => {
-  return query("SELECT * FROM Users WHERE username = ? AND password = ?", [username, password])
+  return query("SELECT * FROM Users WHERE email = ? AND password = ?", [username, password])
     .then(([rows]) => rows[0]);
 };
 
