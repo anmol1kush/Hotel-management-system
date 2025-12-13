@@ -49,29 +49,27 @@ This project demonstrates practical implementation of full-stack development con
 
 ### 🔑 Signup Page
 
-
-
-/Screenshots/signup.png
+![User Signup](Screenshots/signup.png)
 
 ### 🔐 Login Page
 
-/Screenshots/login.png
+![User login](Screenshots/login.png)
 
 
 ### 🏠 Homepage
 
 
-/Screenshots/main.png
+![Homepage](Screenshots/main.png)
 
 
 ### 📅 Booking Page
 
-/Screenshots/booking.png
+![Booking](Screenshots/booking.png)
 
 
 ### ⭐ Reviews Page
 
-/Screenshots/review.png
+![review](Screenshots/review.png)
 
 
 ---
